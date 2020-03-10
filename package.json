@@ -3,7 +3,7 @@
   "version": "1.0.3",
   "description": "axios请求封装",
   "private": false,
-  "main": "index.js",
+  "main": "dist/http.min.js",
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
@@ -23,9 +23,6 @@
     "url": "https://github.com/uaison/x-axios/issues"
   },
   "homepage": "https://github.com/uaison/x-axios#readme",
-  "directories": {
-    "lib": "lib"
-  },
   "dependencies": {
     "axios": "^0.19.2",
     "weui": "^2.3.0"

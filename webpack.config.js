@@ -12,16 +12,6 @@ module.exports = {
     libraryTarget: 'umd',
     umdNamedDefine: true // 对 UMD 的构建过程中的 AMD 模块进行命名
   },
-  // entry: './lib/toast/index.js',
-  // output: {
-  //   path: path.resolve(__dirname, './dist'),
-  //   publicPath: '/dist/',
-  //   // filename: 'build.js',
-  //   filename: 'toast.min.js',// 打包后输出文件名
-  //   library: 'xToast', // 指定的使用require时的模块名
-  //   libraryTarget: 'umd',
-  //   umdNamedDefine: true // 对 UMD 的构建过程中的 AMD 模块进行命名
-  // },
   module: {
     rules: [
       {
@@ -61,7 +51,7 @@ if (process.env.NODE_ENV === 'production') {
       },
     }),
     new webpack.optimize.UglifyJsPlugin({
-      sourceMap: false,
+      sourceMap: true,
       compress: {
         warnings: false
       },

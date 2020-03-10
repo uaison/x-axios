@@ -1,6 +1,6 @@
 {
   "name": "x-axios",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "axios请求封装",
   "private": false,
   "main": "index.js",

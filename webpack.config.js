@@ -2,26 +2,26 @@ var path = require('path')
 var webpack = require('webpack')
 
 module.exports = {
-  // entry: './lib/http/index.js',
-  // output: {
-  //   path: path.resolve(__dirname, './dist'),
-  //   publicPath: '/dist/',
-  //   // filename: 'build.js',
-  //   filename: 'http.min.js',// 打包后输出文件名
-  //   library: 'xAxios', // 指定的使用require时的模块名
-  //   libraryTarget: 'umd',
-  //   umdNamedDefine: true // 对 UMD 的构建过程中的 AMD 模块进行命名
-  // },
-  entry: './lib/toast/index.js',
+  entry: './lib/http/index.js',
   output: {
     path: path.resolve(__dirname, './dist'),
     publicPath: '/dist/',
     // filename: 'build.js',
-    filename: 'toast.min.js',// 打包后输出文件名
-    library: 'xToast', // 指定的使用require时的模块名
+    filename: 'http.min.js',// 打包后输出文件名
+    library: 'xAxios', // 指定的使用require时的模块名
     libraryTarget: 'umd',
     umdNamedDefine: true // 对 UMD 的构建过程中的 AMD 模块进行命名
   },
+  // entry: './lib/toast/index.js',
+  // output: {
+  //   path: path.resolve(__dirname, './dist'),
+  //   publicPath: '/dist/',
+  //   // filename: 'build.js',
+  //   filename: 'toast.min.js',// 打包后输出文件名
+  //   library: 'xToast', // 指定的使用require时的模块名
+  //   libraryTarget: 'umd',
+  //   umdNamedDefine: true // 对 UMD 的构建过程中的 AMD 模块进行命名
+  // },
   module: {
     rules: [
       {
